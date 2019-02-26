@@ -1,5 +1,4 @@
 # blockchainlab
-# blockchainlab
 
 ## 1. Compile & Migrate contract
 
