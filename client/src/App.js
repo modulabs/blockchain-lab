@@ -40,13 +40,16 @@ class App extends Component {
     const { accounts, contract } = this.state;
 
     // Stores a given value, "Admin" by default.
-    await contract.methods.setAdmin("Admin").send({ from: accounts[0] });
+    contract.methods.setAdmin("Admin").send({ from: accounts[0] });
+    contract.methods.setMember("0x01").send({ from: accounts[0] });
 
     // Get the value from the contract to prove it worked.
-    const response = await contract.methods.getAdmin().call();
+    const response1 = await contract.methods.getAdmin().call();
+    const response2 = await contract.methods.getMembers().call();
 
     // Update state with the result.
-    this.setState({ storageValue: response });
+    this.setState({ adminName: response1 });
+    this.setState({ members: response2 });
   };
 
   render() {
@@ -65,7 +68,8 @@ class App extends Component {
         <p>
           Try changing the value stored on <strong>line 40</strong> of App.js.
         </p>
-        <div>The stored value is: {this.state.storageValue }</div>
+        <div>The Admin is: {this.state.adminName }</div>
+        <div>The members are: {this.state.members }</div>
       </div>
     );
   }
