@@ -42,14 +42,17 @@ class App extends Component {
     // Stores a given value, "Admin" by default.
     contract.methods.setAdmin("Admin").send({ from: accounts[0] });
     contract.methods.setMember("0x01").send({ from: accounts[0] });
+    contract.methods.setSyllabus("0x01").send({ from: accounts[0] });
 
     // Get the value from the contract to prove it worked.
-    const response1 = await contract.methods.getAdmin().call();
-    const response2 = await contract.methods.getMembers().call();
+    const adminResponse = await contract.methods.getAdmin().call();
+    const memberResponse = await contract.methods.getMembers().call();
+    const syllabusResponse = await contract.methods.getSyllabus().call();
 
     // Update state with the result.
-    this.setState({ adminName: response1 });
-    this.setState({ members: response2 });
+    this.setState({ adminName: adminResponse });
+    this.setState({ members: memberResponse });
+    this.setState({ syllabus: syllabusResponse });
   };
 
   render() {
@@ -70,6 +73,7 @@ class App extends Component {
         </p>
         <div>The Admin is: {this.state.adminName }</div>
         <div>The members are: {this.state.members }</div>
+        <div>The syllabus are: {this.state.syllabus }</div>
       </div>
     );
   }
