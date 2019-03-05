@@ -8,8 +8,8 @@ contract("Study", accounts => {
     await StudyInstance.setAdmin("Admin", { from: accounts[0] });
 
     // Get stored value
-    const storedData = await StudyInstance.get.call();
+    const storedData = await StudyInstance.getAdmin.call();
 
-    assert.equal(storedData, "admin", "The value Admin was not stored.");
+    assert.equal(storedData, "Admin", "The value Admin was not stored.");
   });
 });
