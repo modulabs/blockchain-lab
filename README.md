@@ -8,6 +8,7 @@
 
 ## 2. Run cient
 - cd client
+- npm install
 - npm run start
 
 ## 3. Test
