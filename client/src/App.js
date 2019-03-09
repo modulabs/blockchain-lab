@@ -1,82 +1,100 @@
-import React, { Component } from "react";
-// import SimpleStorageContract from "./contracts/SimpleStorage.json";
-import StudyContract from "./contracts/Study.json"
-import getWeb3 from "./utils/getWeb3";
+import React from "react";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import StudyManagement from './components/StudyManagement'
 
-import "./App.css";
+function BasicExample() {
+  return (
+    <Router>
+      <div>
+        <h1>Blockchain Lab</h1>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+          <li>
+            <Link to="/studies">Studies</Link>
+          </li>
+          <li>
+            <Link to="/my_studies">My Studies</Link>
+          </li>
+        </ul>
 
-class App extends Component {
-  state = { storageValue: 0, web3: null, accounts: null, contract: null };
+        <hr />
 
-  componentDidMount = async () => {
-    try {
-      // Get network provider and web3 instance.
-      const web3 = await getWeb3();
-
-      // Use web3 to get the user's accounts.
-      const accounts = await web3.eth.getAccounts();
-
-      // Get the contract instance.
-      const networkId = await web3.eth.net.getId();
-      const deployedNetwork = StudyContract.networks[networkId];
-      const instance = new web3.eth.Contract(
-        StudyContract.abi,
-        deployedNetwork && deployedNetwork.address,
-      );
-
-      // Set web3, accounts, and contract to the state, and then proceed with an
-      // example of interacting with the contract's methods.
-      this.setState({ web3, accounts, contract: instance }, this.runExample);
-    } catch (error) {
-      // Catch any errors for any of the above operations.
-      alert(
-        `Failed to load web3, accounts, or contract. Check console for details.`,
-      );
-      console.error(error);
-    }
-  };
-
-  runExample = async () => {
-    const { accounts, contract } = this.state;
-
-    // Stores a given value, "Admin" by default.
-    contract.methods.setAdmin("Admin").send({ from: accounts[0] });
-    contract.methods.setMember("0x01").send({ from: accounts[0] });
-    contract.methods.setSyllabus("0x01").send({ from: accounts[0] });
-
-    // Get the value from the contract to prove it worked.
-    const adminResponse = await contract.methods.getAdmin().call();
-    const memberResponse = await contract.methods.getMembers().call();
-    const syllabusResponse = await contract.methods.getSyllabus().call();
-
-    // Update state with the result.
-    this.setState({ adminName: adminResponse });
-    this.setState({ members: memberResponse });
-    this.setState({ syllabus: syllabusResponse });
-  };
-
-  render() {
-    if (!this.state.web3) {
-      return <div>Loading Web3, accounts, and contract...</div>;
-    }
-    return (
-      <div className="App">
-        <h1>Study Smart Contract, Wed_blockchain</h1>
-        <p>We are on the right track.</p>
-        <h2>Study contract members</h2>
-        <p>
-          If your contracts compiled and migrated successfully, below will show
-          the admin "admin" (by default).
-        </p>
-        <p>
-          Try changing the value stored on <strong>line 40</strong> of App.js.
-        </p>
-        <div>The Admin is: {this.state.adminName }</div>
-        <div>The members are: {this.state.members }</div>
-        <div>The syllabus are: {this.state.syllabus }</div>
+        <Route exact path="/" component={Home} />
+        <Route path="/about" component={About} />
+        <Route path="/studies" component={Studies} />
+        <Route path="/my_studies" component={MyStudies} />
       </div>
-    );
-  }
+    </Router>
+  );
 }
 
-export default App;
+function Home() {
+  return (
+    <div>
+      <h2>Home</h2>
+    </div>
+  );
+}
+
+function About() {
+  return (
+    <div>
+      <h2>About</h2>
+    </div>
+  );
+}
+
+function Studies({ match }) {
+  return (
+    <div>
+      <h2>Studies</h2>
+      <ul>
+        <li>
+          <Link to={`${match.url}/wed_blockchain`}>wed_blockchain</Link>
+        </li>
+      </ul>
+
+      <Route path={`${match.path}/:studyId`} component={Study} />
+      <Route
+        exact
+        path={match.path}
+        render={() => <h3>Please select a topic.</h3>}
+      />
+    </div>
+  );
+}
+
+function MyStudies({ match }) {
+  return (
+    <div>
+      <h2>Studies</h2>
+      <ul>
+        <li>
+          <Link to={`${match.url}/my/wed_blockchain`}>wed_blockchain</Link>
+        </li>
+      </ul>
+
+      <Route path={`${match.path}/my/:studyId`} component={StudyManagement} />
+      <Route
+        exact
+        path={match.path}
+        render={() => <h3>Please select a topic.</h3>}
+      />
+    </div>
+  );
+}
+
+function Study({ match }) {
+  return (
+    <div>
+      <h3>{match.params.studyId}</h3>
+    </div>
+  );
+}
+
+export default BasicExample;
