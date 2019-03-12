@@ -40,7 +40,7 @@ class StudyManagement extends Component {
     const { accounts, contract } = this.state;
 
     // Stores a given value, "Admin" by default.
-    contract.methods.setAdmin("Admin").send({ from: accounts[0] });
+    // contract.methods.setAdmin("Admin").send({ from: accounts[0] });
     // contract.methods.setMember("member").send({ from: accounts[0] });
     // contract.methods.setSyllabus("0x01").send({ from: accounts[0] });
 
@@ -53,6 +53,30 @@ class StudyManagement extends Component {
     this.setState({ adminName: adminResponse });
     // this.setState({ members: memberResponse });
     // this.setState({ syllabus: syllabusResponse });
+    // register new student informaion
+    contract.methods.setStudent(this.state.web3.utils.asciiToHex("name",32), this.state.web3.utils.asciiToHex("test@modulabs.com",32)).send({ from: accounts[0] });
+    const stu_resp = await contract.methods.getStudent(accounts[0]).call();
+    this.setState({ stu_n: stu_resp[0], stu_e: stu_resp[1] });
+
+    // get lecture list
+    const lec_resp = await contract.methods.getLectures().call();
+    this.setState({ lec: lec_resp });
+    
+    // set attendee to lectures
+    // lecture0
+    contract.methods.setAttendance(0).send({ from: accounts[0] });
+    contract.methods.setAttendance(0).send({ from: accounts[1] });
+    contract.methods.setAttendance(0).send({ from: accounts[2] });
+    // lecture1
+    contract.methods.setAttendance(1).send({ from: accounts[3] });
+    contract.methods.setAttendance(1).send({ from: accounts[4] });
+
+    // get attendee
+    const lec0_att = await contract.methods.getAttendance(0).call();
+    const lec1_att = await contract.methods.getAttendance(1).call();
+    this.setState({ lec0: lec0_att });
+    this.setState({ lec1: lec1_att });
+
   };
 
   render() {
@@ -74,6 +98,9 @@ class StudyManagement extends Component {
         <div>The Admin is: {this.state.adminName }</div>
         <div>The members are: {this.state.members }</div>
         <div>The syllabus are: {this.state.syllabus }</div>
+        <div>The lectures are: {this.state.lec }</div>
+        <div>The lecture0 attandance are: {this.state.lec0 }</div>
+        <div>The lecture1 attandance are: {this.state.lec1 }</div>
       </div>
     );
   }
