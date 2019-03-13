@@ -1,0 +1,12 @@
+.row {
+  width: 100%;
+  background: gray;
+  text-align: center;
+}
+.col {
+  padding: 10px;
+  float: left;
+}
+.br {
+  clear:both
+}

@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import StudyManagement from './components/StudyManagement'
+import StudyDescription from './components/StudyDescription'
 
 function BasicExample() {
   return (
@@ -59,7 +60,7 @@ function Studies({ match }) {
         </li>
       </ul>
 
-      <Route path={`${match.path}/:studyId`} component={Study} />
+      <Route path={`${match.path}/:studyId`} component={StudyDescription} />
       <Route
         exact
         path={match.path}
@@ -72,7 +73,7 @@ function Studies({ match }) {
 function MyStudies({ match }) {
   return (
     <div>
-      <h2>Studies</h2>
+      <h2>My Studies</h2>
       <ul>
         <li>
           <Link to={`${match.url}/my/wed_blockchain`}>wed_blockchain</Link>
