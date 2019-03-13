@@ -2,6 +2,7 @@
 var Study = artifacts.require("./Study.sol");
 
 module.exports = function(deployer) {
-  // deployer.deploy(SimpleStorage);
-  deployer.deploy(Study)
+  // Class defined with Lectures when created
+  // Class name, Lecture list
+  deployer.deploy(Study, "0x01", ["0x02","0x03"]);
 };
