@@ -17,11 +17,6 @@ contract Study {
   mapping(address => Student) public students;
   Lecture[] class;
 
-  uint numOfStudent = 2;
-  bytes8[] memberList = new bytes8[](numOfStudent); // init list
-  uint numOfSylabus = 5;
-  bytes4[] syllabusList = new bytes4[](numOfSylabus);
-
   constructor(bytes32 className, bytes32[] memory lectureNames) public {
     labAdmin = msg.sender;
     labName = className;
@@ -63,20 +58,5 @@ contract Study {
 
   function getAttendance(uint lectureNum) public view returns (address[] memory){
     return class[lectureNum].attandee;
-  }
-
-  function setMember(bytes8 member) public {
-    memberList.push(member);
-  }
-  function getMembers() public returns(bytes8[] memory) {
-    return memberList;
-  }
-
-  function setSyllabus(bytes4 sylabus) public {
-    syllabusList.push(sylabus);
-  }
-
-  function getSyllabus() public returns(bytes4[] memory) {
-    return syllabusList;
   }
 }

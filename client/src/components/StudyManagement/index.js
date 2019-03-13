@@ -39,20 +39,11 @@ class StudyManagement extends Component {
   runExample = async () => {
     const { accounts, contract } = this.state;
 
-    // Stores a given value, "Admin" by default.
-    // contract.methods.setAdmin("Admin").send({ from: accounts[0] });
-    // contract.methods.setMember("member").send({ from: accounts[0] });
-    // contract.methods.setSyllabus("0x01").send({ from: accounts[0] });
-
     // Get the value from the contract to prove it worked.
     const adminResponse = await contract.methods.getAdmin().call();
-    // const memberResponse = await contract.methods.getMembers().call();
-    // const syllabusResponse = await contract.methods.getSyllabus().call();
 
     // Update state with the result.
     this.setState({ adminName: adminResponse });
-    // this.setState({ members: memberResponse });
-    // this.setState({ syllabus: syllabusResponse });
     // register new student informaion
     contract.methods.setStudent(this.state.web3.utils.asciiToHex("name",32), this.state.web3.utils.asciiToHex("test@modulabs.com",32)).send({ from: accounts[0] });
     const stu_resp = await contract.methods.getStudent(accounts[0]).call();
@@ -96,8 +87,6 @@ class StudyManagement extends Component {
           Try changing the value stored on <strong>line 40</strong> of App.js.
         </p>
         <div>The Admin is: {this.state.adminName }</div>
-        <div>The members are: {this.state.members }</div>
-        <div>The syllabus are: {this.state.syllabus }</div>
         <div>The lectures are: {this.state.lec }</div>
         <div>The lecture0 attandance are: {this.state.lec0 }</div>
         <div>The lecture1 attandance are: {this.state.lec1 }</div>
