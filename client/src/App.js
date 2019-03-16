@@ -6,30 +6,11 @@ import StudyDescription from './components/StudyDescription'
 function BasicExample() {
   return (
     <Router>
-      <div>
-        <h1>Blockchain Lab</h1>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/studies">Studies</Link>
-          </li>
-          <li>
-            <Link to="/my_studies">My Studies</Link>
-          </li>
-        </ul>
-
-        <hr />
-
-        <Route exact path="/" component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/studies" component={Studies} />
-        <Route path="/my_studies" component={MyStudies} />
-      </div>
+      <Route exact path="/" component={Home} />
+      <Route path={`/studies/:studyId`} component={StudyDescription} />
+      <Route path="/about" component={About} />
+      <Route path="/studies" component={Studies} />
+      <Route path="/my_studies" component={MyStudies} />
     </Router>
   );
 }
@@ -37,7 +18,26 @@ function BasicExample() {
 function Home() {
   return (
     <div>
-      <h2>Home</h2>
+    <div>
+      <h1>Blockchain Lab</h1>
+      <ul>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/about">About</Link>
+        </li>
+        <li>
+          <Link to="/studies">Studies</Link>
+        </li>
+        <li>
+          <Link to="/my_studies">My Studies</Link>
+        </li>
+      </ul>
+
+      <hr />
+
+    </div>
     </div>
   );
 }
@@ -60,7 +60,6 @@ function Studies({ match }) {
         </li>
       </ul>
 
-      <Route path={`${match.path}/:studyId`} component={StudyDescription} />
       <Route
         exact
         path={match.path}
