@@ -69,6 +69,7 @@ contract Study {
   }
 
   function setLab(bytes32 labName, bytes32[] memory lectureNames) public {
+    labs[labName].lecturesSize = lectureNames.length;
     for (uint i = 0; i < lectureNames.length; i++) {
       labs[labName].lectures[i] = Lecture({
         lectureName: lectureNames[i],
