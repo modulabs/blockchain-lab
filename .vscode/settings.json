@@ -1,0 +1,13 @@
+{
+    "editor.tabSize": 2,
+    "solidity.linter": "solhint",
+    "solidity.solhintRules": {
+        "avoid-sha3": "warn",
+        "indent": 2,
+        "compiler-fixed": false,
+        "two-lines-top-level-separator": false,
+        "state-visibility": false,
+        "var-name-mixedcase": "warn",
+        "func-param-name-mixedcase": "warn"
+    }
+}
