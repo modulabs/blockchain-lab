@@ -18,11 +18,17 @@ contract Lab {
         labName = _labName;
     }
 
-    function createStudy(string memory _studyName) public {
-        Study newStudy = new Study();
-        newStudy.setStudyName(_studyName);
+    function createStudy(
+        string memory _studyName, 
+        bytes32 _ownerName, 
+        bytes32 _ownerEmail,
+        bytes32 _syllabusURL) 
+        public returns (bool)
+        {
+        Study newStudy = new Study(_studyName, _ownerName, _ownerEmail, _syllabusURL);
         address _addr = address(newStudy);
         studyList.push(_addr);
         emit StudyCreated(_addr, msg.sender);
+        return true;
     }
 }
