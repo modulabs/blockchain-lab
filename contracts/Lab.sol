@@ -1,5 +1,8 @@
 pragma solidity ^0.5.0;
 
+/// @author The Modulabs Team
+/// @title A Study contract
+
 import "./Study.sol";
 
 contract Lab {
@@ -18,17 +21,20 @@ contract Lab {
         labName = _labName;
     }
 
+    function getStudyCount() public view returns(uint count) {
+        return studyList.length;
+    }
+
     function createStudy(
         string memory _studyName, 
         bytes32 _ownerName, 
         bytes32 _ownerEmail,
         bytes32 _syllabusURL) 
-        public returns (bool)
+        public
         {
-        Study newStudy = new Study(_studyName, _ownerName, _ownerEmail, _syllabusURL);
+        Study newStudy = new Study(msg.sender, _studyName, _ownerName, _ownerEmail, _syllabusURL);
         address _addr = address(newStudy);
         studyList.push(_addr);
         emit StudyCreated(_addr, msg.sender);
-        return true;
     }
 }
