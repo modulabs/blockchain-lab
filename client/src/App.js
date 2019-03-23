@@ -6,12 +6,14 @@ import StudyDescription from './components/StudyDescription'
 function BasicExample() {
   return (
     <Router>
-      <Route exact path="/" component={Home} />
-      <Route path={`/studies/:studyId`} component={StudyDescription} />
-      <Route path={`/my_studies/:studyId`} component={StudyManagement} />
-      <Route path="/about" component={About} />
-      <Route path="/studies" component={Studies} />
-      <Route path="/my_studies" component={MyStudies} />
+      <div>
+        <Route exact path="/" component={Home} />
+        <Route path={`/studies/:studyId`} component={StudyDescription} />
+        <Route path={`/my_studies/:studyId`} component={StudyManagement} />
+        <Route path="/about" component={About} />
+        <Route path="/studies" component={Studies} />
+        <Route path="/my_studies" component={MyStudies} />
+      </div>
     </Router>
   );
 }
