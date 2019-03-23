@@ -1,14 +1,5 @@
 # blockchainlab
 
-## 0. Dependency
-
-### Openzeppelin-solidity
-
-- To install openzeppelin-solidity library,
-> $ npm init -y
-
-> $ npm install --save-exact openzeppelin-solidity
-
 ## 1. Compile & Migrate contract
 
 - truffle develop
