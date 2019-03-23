@@ -10,7 +10,9 @@ class StudyDescription extends Component {
 
         <div className="header">
           <div className="background">
-          <h1>Wednesday Blockchain</h1>
+            <div className="left">
+              <h1>Wednesday Blockchain</h1>
+            </div>
           </div>
         </div>
         <div class="row">
@@ -46,8 +48,9 @@ class StudyDescription extends Component {
           </div>
         </div>
         <br />
-        <div id="introduction" >
-          <h3>About this course</h3>
+        <div className="container">
+        <div id="introduction" className="introduction">
+          <h3 className="about">About this course</h3>
           <p>We study Mastering Ethereum every Wednesday.</p>
           This course will introduce you to the basic elements of academic information seeking - we will explore the search process from defining a strategy to evaluating and documenting your search results.
 
@@ -111,6 +114,7 @@ will be introduced to concepts like copyright and plagiarism, and you will learn
         재정 지원을 받을 수 있나요?
 
         예, Coursera는 수업료를 지급하기 어려운 학습자들에게 재정 지원을 제공합니다. 왼쪽의 "등록" 버튼 아래에 있는 재정 지원 링크를 클릭하면 재정 지원을 신청할 수 있습니다. 이 링크를 클릭하면 신청서를 작성하라는 메시지가 나타나며, 신청서가 승인되면 통지를 받게 됩니다. 자세히 알아보세요.
+        </div>
         </div>
       </div>
     );

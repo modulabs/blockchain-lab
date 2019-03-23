@@ -8,6 +8,7 @@ function BasicExample() {
     <Router>
       <Route exact path="/" component={Home} />
       <Route path={`/studies/:studyId`} component={StudyDescription} />
+      <Route path={`/my_studies/:studyId`} component={StudyManagement} />
       <Route path="/about" component={About} />
       <Route path="/studies" component={Studies} />
       <Route path="/my_studies" component={MyStudies} />
@@ -75,24 +76,15 @@ function MyStudies({ match }) {
       <h2>My Studies</h2>
       <ul>
         <li>
-          <Link to={`${match.url}/my/wed_blockchain`}>wed_blockchain</Link>
+          <Link to={`${match.url}/wed_blockchain`}>wed_blockchain</Link>
         </li>
       </ul>
 
-      <Route path={`${match.path}/my/:studyId`} component={StudyManagement} />
       <Route
         exact
         path={match.path}
         render={() => <h3>Please select a topic.</h3>}
       />
-    </div>
-  );
-}
-
-function Study({ match }) {
-  return (
-    <div>
-      <h3>{match.params.studyId}</h3>
     </div>
   );
 }

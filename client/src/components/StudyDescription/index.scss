@@ -15,4 +15,25 @@
   .background {
     min-height: 250px;
   }
+  .left {
+    position: relative;
+    min-height: 1px;
+    width: 50%;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 32px;
+  padding-right: 32px;
+  .introduction {
+    .about {
+      font-size: 2.125rem;
+      line-height: 2.625rem;
+      font-weight: normal;
+      font-family: 'OpenSans-Light', Arial, sans-serif;
+    }
+  }
 }
