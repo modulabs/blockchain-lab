@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import StudyManagement from './components/StudyManagement'
 import StudyDescription from './components/StudyDescription'
 
+import './App.css'
+
 function BasicExample() {
   return (
     <Router>
@@ -22,7 +24,9 @@ function Home() {
   return (
     <div>
     <div>
-      <h1>Blockchain Lab</h1>
+
+      <img src="blockchainlab-logo.svg"
+           class="blockchainlab_logo" />
       <ul>
         <li>
           <Link to="/">Home</Link>
