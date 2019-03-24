@@ -9,6 +9,8 @@ function BasicExample() {
   return (
     <Router>
       <div>
+        <a href="/"><img src="blockchainlab-logo.svg"
+             class="blockchainlab_logo" /></a>
         <Route exact path="/" component={Home} />
         <Route path={`/studies/:studyId`} component={StudyDescription} />
         <Route path={`/my_studies/:studyId`} component={StudyManagement} />
@@ -24,9 +26,6 @@ function Home() {
   return (
     <div>
     <div>
-
-      <img src="blockchainlab-logo.svg"
-           class="blockchainlab_logo" />
       <ul>
         <li>
           <Link to="/">Home</Link>

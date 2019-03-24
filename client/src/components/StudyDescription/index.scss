@@ -13,7 +13,6 @@
 
 .header {
   .background {
-    min-height: 250px;
   }
   .left {
     position: relative;
@@ -21,6 +20,20 @@
     width: 50%;
     padding-left: 0px;
     padding-right: 0px;
+    .title {
+      width: 484px;
+      height: 52px;
+      object-fit: contain;
+      font-family: SpoqaHanSans;
+      font-size: 35px;
+      font-weight: 300;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      margin-left: 137px;
+      margin-top: 93px;
+    }
   }
 }
 .container {

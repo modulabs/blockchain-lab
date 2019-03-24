@@ -11,7 +11,7 @@ class StudyDescription extends Component {
         <div className="header">
           <div className="background">
             <div className="left">
-              <h1>Wednesday Blockchain</h1>
+              <h1 className="title">Wednesday Blockchain</h1>
             </div>
           </div>
         </div>
