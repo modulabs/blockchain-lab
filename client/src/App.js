@@ -1,7 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+
 import StudyManagement from './components/StudyManagement'
 import StudyDescription from './components/StudyDescription'
+import AddStudy from './components/AddStudy'
 
 import './App.css'
 
@@ -12,6 +14,7 @@ function BasicExample() {
         <a href="/"><img src="blockchainlab-logo.svg"
              class="blockchainlab_logo" /></a>
         <Route exact path="/" component={Home} />
+        <Route path={`/add_study`} component={AddStudy} />
         <Route path={`/studies/:studyId`} component={StudyDescription} />
         <Route path={`/my_studies/:studyId`} component={StudyManagement} />
         <Route path="/about" component={About} />
@@ -65,7 +68,7 @@ function Studies({ match }) {
           <Link to={`${match.url}/wed_blockchain`}>wed_blockchain</Link>
         </li>
       </ul>
-
+      <Link to='/add_study' className="button">Add Study</Link>
       <Route
         exact
         path={match.path}
