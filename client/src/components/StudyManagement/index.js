@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 // import SimpleStorageContract from "./contracts/SimpleStorage.json";
-import StudyContract from "../../contracts/Study.json"
+import StudyContract from "../../contracts/Lab.json"
 import getWeb3 from "../../utils/getWeb3";
 
 import "./index.css";
@@ -39,13 +39,15 @@ class StudyManagement extends Component {
   runExample = async () => {
     const { accounts, contract } = this.state;
 
+    /**
     // Get the value from the contract to prove it worked.
     const adminResponse = await contract.methods.getAdmin().call();
 
     // Update state with the result.
     this.setState({ adminName: adminResponse });
     // register new student informaion
-    contract.methods.setStudent(this.state.web3.utils.asciiToHex("name",32), this.state.web3.utils.asciiToHex("test@modulabs.com",32)).send({ from: accounts[0] });
+    contract.methods.setStudent(this.state.web3.utils.asciiToHex("name",32),
+                                this.state.web3.utils.asciiToHex("test@modulabs.com",32)).send({ from: accounts[0] });
     const stu_resp = await contract.methods.getStudent(accounts[0]).call();
     this.setState({ stu_n: stu_resp[0], stu_e: stu_resp[1] });
 
@@ -67,7 +69,7 @@ class StudyManagement extends Component {
     const lec1_att = await contract.methods.getAttendance(1).call();
     this.setState({ lec0: lec0_att });
     this.setState({ lec1: lec1_att });
-
+    */
   };
 
   render() {
