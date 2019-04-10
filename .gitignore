@@ -5,5 +5,4 @@ client/src/contracts/SimpleStorage.json
 client/src/contracts/Study.json
 client/src/contracts/Lab.json
 node_modules/*
-package.json
 package-lock.json
