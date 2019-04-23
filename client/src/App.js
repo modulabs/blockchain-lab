@@ -15,7 +15,7 @@ const App = () => {
         <a href="/">
           <img 
             src="blockchainlab-logo.svg"
-            class="blockchainlab_logo"
+            className="blockchainlab_logo"
             alt="blockchainlab_logo"
           />
         </a>

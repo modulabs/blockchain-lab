@@ -31,4 +31,8 @@ contract Lab {
     studyList.push(_addr);
     emit StudyCreated(_addr, msg.sender);
   }
+
+  function getStudyList() public view returns(address[] memory) {
+    return studyList;
+  }
 }

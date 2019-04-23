@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 // import SimpleStorageContract from "./contracts/SimpleStorage.json";
-import StudyContract from "../../contracts/Lab.json"
+import StudyContract from "../../contracts/Study.json"
 import getWeb3 from "../../utils/getWeb3";
 
 import "./index.css";
 
 class StudyManagement extends Component {
-  state = { storageValue: 0, web3: null, accounts: null, contract: null };
+  state = { storageValue: 0, web3: null, accounts: null, contracts: [], selected: 0 };
 
   componentDidMount = async () => {
     try {
@@ -17,16 +17,17 @@ class StudyManagement extends Component {
       const accounts = await web3.eth.getAccounts();
 
       // Get the contract instance.
-      const networkId = await web3.eth.net.getId();
-      const deployedNetwork = StudyContract.networks[networkId];
-      const instance = new web3.eth.Contract(
+      const contractAddress = window.location.search.split("=")[1];
+      console.log(contractAddress);
+      const studyInstance = new web3.eth.Contract(
         StudyContract.abi,
-        deployedNetwork && deployedNetwork.address,
+        contractAddress,
       );
-
+      
+      this.setState({ web3, accounts, contract: studyInstance }, this.runExample);
       // Set web3, accounts, and contract to the state, and then proceed with an
       // example of interacting with the contract's methods.
-      this.setState({ web3, accounts, contract: instance }, this.runExample);
+      //
     } catch (error) {
       // Catch any errors for any of the above operations.
       alert(
@@ -37,17 +38,21 @@ class StudyManagement extends Component {
   };
 
   runExample = async () => {
-    const { accounts, contract } = this.state;
-
-    /**
+    const { accounts, contracts } = this.state;
+    if(this.state.selected >= this.state.contracts.length - 1 && this.state.selected !== 0) {
+      this.setState({ selected: 0 }, this.runExample);
+      return;
+    }
+    if(this.state.contracts.length === 0) return;
+    const contract = contracts[this.state.selected];
     // Get the value from the contract to prove it worked.
-    const adminResponse = await contract.methods.getAdmin().call();
+    const adminResponse = await contract.methods.getOwner().call();
 
     // Update state with the result.
     this.setState({ adminName: adminResponse });
     // register new student informaion
-    contract.methods.setStudent(this.state.web3.utils.asciiToHex("name",32),
-                                this.state.web3.utils.asciiToHex("test@modulabs.com",32)).send({ from: accounts[0] });
+    contract.methods.setStudent(this.state.web3.utils.utf8ToHex("name",32),
+                                this.state.web3.utils.utf8ToHex("test@modulabs.com",32)).send({ from: accounts[0] });
     const stu_resp = await contract.methods.getStudent(accounts[0]).call();
     this.setState({ stu_n: stu_resp[0], stu_e: stu_resp[1] });
 
@@ -69,7 +74,7 @@ class StudyManagement extends Component {
     const lec1_att = await contract.methods.getAttendance(1).call();
     this.setState({ lec0: lec0_att });
     this.setState({ lec1: lec1_att });
-    */
+    
   };
 
   render() {
