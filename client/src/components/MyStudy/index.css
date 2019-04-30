@@ -1,13 +1,13 @@
-.StudyManagement {
+.MyStudy {
   text-align: center;
 }
 
-.StudyManagement-logo {
+.MyStudy-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
 }
 
-.StudyManagement-header {
+.MyStudy-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -18,7 +18,7 @@
   color: white;
 }
 
-.StudyManagement-link {
+.MyStudy-link {
   color: #61dafb;
 }
 
