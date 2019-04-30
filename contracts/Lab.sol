@@ -12,8 +12,9 @@ contract Lab {
 
   event StudyCreated(address studyAddr, address studyAdmin);
 
-  constructor () public {
+  constructor (string memory _labName) public {
     _labOwner = msg.sender;
+    labName = _labName;
   }
 
   function setLabName(string memory _labName) public {

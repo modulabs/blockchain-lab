@@ -65,7 +65,7 @@ contract Study {
         studyOwner = _studyOwner;
         students[studyOwner] = Student(_ownerName, _ownerEmail, true, true);
         syllabusURL = _syllabusURL;
-        sessionNumber = 1;
+        sessionNumber = 0;
         studentNumber = 1;
         emit StudyStateChange(_studyName, _syllabusURL, "Study Created");
     }
@@ -85,12 +85,20 @@ contract Study {
         return studyOwner;
     }
 
+    function getStudentNumber() public view returns(uint) {
+        return studentNumber;
+    }
+
+    function getSessionNumber() public view returns(uint) {
+        return sessionNumber;
+    }
+
     /**
      * @dev Function for set student by adding Student struct to the students mapping.
      * only admin can set the student.
      * event emitted by the student addition.
      */
-    function setStudent(bytes32 _name, bytes32 _email, address _candidate) public onlyAdmin{
+    function setStudent(bytes32 _name, bytes32 _email, address _candidate) public onlyAdmin {
         students[_candidate] = Student(_name, _email, true, false);
         emit MemberStateChange(_candidate, int8(MemberState.StudentAssigned));
         studentNumber++;
@@ -101,7 +109,7 @@ contract Study {
      * only admin can remove the student.
      * event emitted by the student addition.
      */
-    function removeStudent(address _student) public onlyAdmin{
+    function removeStudent(address _student) public onlyAdmin {
         require(students[_student].isStudent == true, "This address is not a student");
         require(students[_student].isAdmin == false, "Admin member can not be removed by other admin");
         students[_student] = Student(0, 0, false, false);
@@ -124,7 +132,7 @@ contract Study {
      * @notice There might be more than one admins.
      * @param _candidate is the admin candidate address which is required to be a student in advance.
      */
-    function setAdmin(address _candidate) public onlyOwner{
+    function setAdmin(address _candidate) public onlyOwner {
         require(students[_candidate].isStudent, "This address is not student.");
         require(students[_candidate].isAdmin == false, "This address is already an admin.");
         students[_candidate].isAdmin = true;
@@ -135,20 +143,19 @@ contract Study {
      * @dev Function for removing admin. This is can only be run by the studyOwner.
      * @param _admin is the admin candidate address which is required to be an admin in advance.
      */
-    function removeAdmin(address _admin) public onlyOwner{
+    function removeAdmin(address _admin) public onlyOwner {
         require(students[_admin].isStudent == true, "This address is not a student");
         require(students[_admin].isAdmin == true, "This address is not an admin.");
         students[_admin].isAdmin = false;
         emit MemberStateChange(_admin, int8(MemberState.AdminRemoved));
     }
     
-
     /**
      * @dev Function for add one session to the sessions mapping, only Admin can set it.
      * @param _sessionName : bytes32 type session name.
      * @param _materialURL : bytes32 type URL of session material.
      */
-    function addSession(bytes32 _sessionName, bytes32 _materialURL) public onlyAdmin{
+    function addSession(bytes32 _sessionName, bytes32 _materialURL) public onlyAdmin {
         Session memory newSession = Session({
             sessionName: _sessionName,
             materialURL: _materialURL,
@@ -197,7 +204,7 @@ contract Study {
      * @notice only Owner of the study can change the study name.
      * @notice event StudyStateChange emitted.
      */
-    function changeStudyName(string memory _studyName) public onlyOwner{
+    function changeStudyName(string memory _studyName) public onlyOwner {
         studyName = _studyName;
         emit StudyStateChange(_studyName, syllabusURL, "Study name changed");
     }
@@ -208,7 +215,7 @@ contract Study {
      * @notice only Owner of the study can change the study syllabusURL.
      * @notice event StudyStateChange emitted.
      */
-    function changeSyllabusURL(bytes32 _syllabusURL) public onlyOwner{
+    function changeSyllabusURL(bytes32 _syllabusURL) public onlyOwner {
         syllabusURL = _syllabusURL;
         emit StudyStateChange(studyName, _syllabusURL, "Syllabus URL changed");
     }
@@ -222,6 +229,13 @@ contract Study {
         _transferOwnership(newOwner);
     }
 
+    /**
+     * @dev Study destruction function
+     * @notice only Owner can call this function
+     */    
+    function kill() public onlyOwner {
+        selfdestruct(msg.sender);
+    }  
 
     /**
      * @dev Helper functions for ownership management.
@@ -234,16 +248,4 @@ contract Study {
         emit OwnershipTransferred(studyOwner, newOwner);
         studyOwner = newOwner;
     }
-
-    /**
-     * @dev Study destruction function
-     * @notice only Owner can call this function
-     */    
-    function kill() public onlyOwner{
-        selfdestruct(msg.sender);
-    }
-
-    
-
-    
 }   
