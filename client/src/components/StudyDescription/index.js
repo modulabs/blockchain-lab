@@ -15,33 +15,33 @@ class StudyDescription extends Component {
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col" >
+        <div className="row">
+          <div className="col" >
             <a href="#introduction">
               Introduction
             </a>
           </div>
-          <div class="col">
+          <div className="col">
             <a href="#syllabus">
               Syllabus
             </a>
           </div>
-          <div class="col">
+          <div className="col">
             <a href="#reviews">
               Reviews
             </a>
           </div>
-          <div class="col">
+          <div className="col">
             <a href="#instructors">
               Instructors
             </a>
           </div>
-          <div class="col">
+          <div className="col">
             <a href="#enrollment">
               Enrollment
             </a>
           </div>
-          <div class="col">
+          <div className="col">
             <a href="#faq">
               FAQ
             </a>

@@ -5,7 +5,7 @@ import getWeb3 from "../../utils/getWeb3";
 
 import "./index.css";
 
-class StudyManagement extends Component {
+class MyStudy extends Component {
   state = { storageValue: 0, web3: null, accounts: null, contracts: [], selected: 0 };
 
   componentDidMount = async () => {
@@ -18,13 +18,21 @@ class StudyManagement extends Component {
 
       // Get the contract instance.
       const contractAddress = window.location.search.split("=")[1];
-      console.log(contractAddress);
+      
       const studyInstance = new web3.eth.Contract(
         StudyContract.abi,
         contractAddress,
       );
-      
-      this.setState({ web3, accounts, contract: studyInstance }, this.runExample);
+      const studyName = await studyInstance.methods.getStudyName().call();
+      const adminName = await studyInstance.methods.getOwner().call();
+      const syllabusURL = web3.utils.toUtf8(await studyInstance.methods.getSyllabus().call());
+      const sessionNumber = (await studyInstance.methods.getSessionNumber().call()).toNumber();
+      const attendances = [];
+      for(let i = 0; i < sessionNumber; i++) {
+        attendances[i] = await studyInstance.methods.getAttendance(i).call();
+      }
+      console.log(attendances);
+      this.setState({ web3, accounts, contract: studyInstance, studyName, adminName, syllabusURL, sessionNumber, attendances });
       // Set web3, accounts, and contract to the state, and then proceed with an
       // example of interacting with the contract's methods.
       //
@@ -82,8 +90,8 @@ class StudyManagement extends Component {
       return <div>Loading Web3, accounts, and contract...</div>;
     }
     return (
-      <div className="StudyManagement">
-        <h1>Study Smart Contract, Wed_blockchain</h1>
+      <div className="MyStudy">
+        <h1>Study Smart Contract, { this.state.studyName }</h1>
         <p>We are on the right track.</p>
         <h2>Study contract members</h2>
         <p>
@@ -93,13 +101,19 @@ class StudyManagement extends Component {
         <p>
           Try changing the value stored on <strong>line 40</strong> of App.js.
         </p>
-        <div>The Admin is: {this.state.adminName }</div>
-        <div>The lectures are: {this.state.lec }</div>
-        <div>The lecture0 attandance are: {this.state.lec0 }</div>
-        <div>The lecture1 attandance are: {this.state.lec1 }</div>
+        <div>The Admin is: { this.state.adminName }</div>
+        <div>The number of lectures is: {this.state.sessionNumber }</div>
+        <div>You can find information of study at <a href={this.state.syllabusURL}>here</a></div>
+        {
+          this.state.attendances.map((attendance, key) => {
+            return <div>
+              The lecture{ key } attandance are: { attendance }
+            </div>;
+          })
+        }
       </div>
     );
   }
 }
 
-export default StudyManagement;
+export default MyStudy;
