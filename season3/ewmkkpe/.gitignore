@@ -1,0 +1,7 @@
+.idea
+
+conf/*
+config/*
+
+logs/*
+temp/*
