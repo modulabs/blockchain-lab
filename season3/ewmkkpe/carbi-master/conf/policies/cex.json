@@ -1,0 +1,338 @@
+{
+  "btc/gbp": {
+    "volume": {
+      "step": 1e-08,
+      "min": 0.002
+    },
+    "price": {
+      "max": 30000.0,
+      "step": 0.1,
+      "min": 1300.0
+    }
+  },
+  "btc/eur": {
+    "volume": {
+      "max": 30.0,
+      "step": 1e-08,
+      "min": 0.002
+    },
+    "price": {
+      "max": 35000.0,
+      "step": 0.1,
+      "min": 1500.0
+    }
+  },
+  "xrp/eur": {
+    "volume": {
+      "step": 1e-06,
+      "min": 40.0
+    },
+    "price": {
+      "max": 50.0,
+      "step": 0.0001,
+      "min": 0.05
+    }
+  },
+  "btc/usd": {
+    "volume": {
+      "max": 30.0,
+      "step": 1e-08,
+      "min": 0.002
+    },
+    "price": {
+      "max": 35000.0,
+      "step": 0.1,
+      "min": 1500.0
+    }
+  },
+  "xrp/btc": {
+    "volume": {
+      "step": 1e-06,
+      "min": 40.0
+    },
+    "price": {
+      "max": 0.001,
+      "step": 1e-08,
+      "min": 3e-06
+    }
+  },
+  "zec/gbp": {
+    "volume": {
+      "step": 1e-08,
+      "min": 0.07
+    },
+    "price": {
+      "max": 4096.0,
+      "step": 0.01,
+      "min": 40.0
+    }
+  },
+  "zec/btc": {
+    "volume": {
+      "step": 1e-08,
+      "min": 0.03
+    },
+    "price": {
+      "max": 2.0,
+      "step": 1e-06,
+      "min": 0.005
+    }
+  },
+  "dash/btc": {
+    "volume": {
+      "step": 1e-08,
+      "min": 0.015
+    },
+    "price": {
+      "max": 2.0,
+      "step": 1e-06,
+      "min": 0.005
+    }
+  },
+  "eth/gbp": {
+    "volume": {
+      "step": 1e-08,
+      "min": 0.05
+    },
+    "price": {
+      "max": 5128.0,
+      "step": 0.01,
+      "min": 60.0
+    }
+  },
+  "bch/usd": {
+    "volume": {
+      "max": 30.0,
+      "step": 1e-08,
+      "min": 0.02
+    },
+    "price": {
+      "max": 8192.0,
+      "step": 0.01,
+      "min": 150.0
+    }
+  },
+  "btg/btc": {
+    "volume": {
+      "step": 1e-08,
+      "min": 0.01
+    },
+    "price": {
+      "max": 2.0,
+      "step": 1e-06,
+      "min": 0.001
+    }
+  },
+  "dash/usd": {
+    "volume": {
+      "step": 1e-08,
+      "min": 0.03
+    },
+    "price": {
+      "max": 4096.0,
+      "step": 0.01,
+      "min": 100.0
+    }
+  },
+  "ghs/btc": {
+    "volume": {
+      "step": 1e-08,
+      "min": 100.0
+    },
+    "price": {
+      "max": 0.01,
+      "step": 1e-08,
+      "min": 1e-06
+    }
+  },
+  "btg/eur": {
+    "volume": {
+      "step": 1e-08,
+      "min": 0.03
+    },
+    "price": {
+      "max": 2048.0,
+      "step": 0.01,
+      "min": 5.0
+    }
+  },
+  "dash/gbp": {
+    "volume": {
+      "step": 1e-08,
+      "min": 0.03
+    },
+    "price": {
+      "max": 4096.0,
+      "step": 0.01,
+      "min": 100.0
+    }
+  },
+  "btg/usd": {
+    "volume": {
+      "step": 1e-08,
+      "min": 0.03
+    },
+    "price": {
+      "max": 2048.0,
+      "step": 0.01,
+      "min": 5.0
+    }
+  },
+  "xlm/btc": {
+    "volume": {
+      "step": 1e-07,
+      "min": 70.0
+    },
+    "price": {
+      "max": 0.0005,
+      "step": 1e-08,
+      "min": 1e-06
+    }
+  },
+  "xlm/eur": {
+    "volume": {
+      "step": 1e-07,
+      "min": 70.0
+    },
+    "price": {
+      "max": 50.0,
+      "step": 0.0001,
+      "min": 0.03
+    }
+  },
+  "dash/eur": {
+    "volume": {
+      "step": 1e-08,
+      "min": 0.03
+    },
+    "price": {
+      "max": 4096.0,
+      "step": 0.01,
+      "min": 100.0
+    }
+  },
+  "eth/btc": {
+    "volume": {
+      "max": 1000.0,
+      "step": 1e-08,
+      "min": 0.025
+    },
+    "price": {
+      "max": 2.0,
+      "step": 1e-06,
+      "min": 0.025
+    }
+  },
+  "eth/eur": {
+    "volume": {
+      "step": 1e-08,
+      "min": 0.05
+    },
+    "price": {
+      "max": 4096.0,
+      "step": 0.01,
+      "min": 70.0
+    }
+  },
+  "xlm/usd": {
+    "volume": {
+      "step": 1e-07,
+      "min": 70.0
+    },
+    "price": {
+      "max": 50.0,
+      "step": 0.0001,
+      "min": 0.03
+    }
+  },
+  "xrp/usd": {
+    "volume": {
+      "step": 1e-06,
+      "min": 40.0
+    },
+    "price": {
+      "max": 50.0,
+      "step": 0.0001,
+      "min": 0.05
+    }
+  },
+  "zec/usd": {
+    "volume": {
+      "step": 1e-08,
+      "min": 0.07
+    },
+    "price": {
+      "max": 4096.0,
+      "step": 0.01,
+      "min": 50.0
+    }
+  },
+  "bch/gbp": {
+    "volume": {
+      "step": 1e-08,
+      "min": 0.02
+    },
+    "price": {
+      "max": 8192.0,
+      "step": 0.01,
+      "min": 150.0
+    }
+  },
+  "eth/usd": {
+    "volume": {
+      "max": 1000.0,
+      "step": 1e-08,
+      "min": 0.05
+    },
+    "price": {
+      "max": 4096.0,
+      "step": 0.01,
+      "min": 70.0
+    }
+  },
+  "bch/btc": {
+    "volume": {
+      "max": 30.0,
+      "step": 1e-08,
+      "min": 0.007
+    },
+    "price": {
+      "max": 2.0,
+      "step": 1e-06,
+      "min": 0.005
+    }
+  },
+  "bch/eur": {
+    "volume": {
+      "step": 1e-08,
+      "min": 0.02
+    },
+    "price": {
+      "max": 8192.0,
+      "step": 0.01,
+      "min": 150.0
+    }
+  },
+  "zec/eur": {
+    "volume": {
+      "step": 1e-08,
+      "min": 0.07
+    },
+    "price": {
+      "max": 4096.0,
+      "step": 0.01,
+      "min": 50.0
+    }
+  },
+  "btc/rub": {
+    "volume": {
+      "step": 1e-08,
+      "min": 0.001
+    },
+    "price": {
+      "max": 2000000.0,
+      "step": 1,
+      "min": 10000.0
+    }
+  }
+}

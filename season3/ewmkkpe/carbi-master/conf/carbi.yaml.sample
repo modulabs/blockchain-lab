@@ -1,0 +1,27 @@
+# 트레이드 관련 설정
+TRADE_ENABLED: false
+LOOP_DELAY_MILLIS: 2000
+PROFIT_MARGIN_THRESHOLD: 0.05
+
+# Slack 관련 설정
+SLACK_ENABLED: false
+
+# Sentry 관련 설정
+SENTRY_ENABLED: false
+SENTRY_ADDRESS: [YOUR_SENTRY_ADDRESS]
+
+# GOOGLE CLOUD 관련 설정
+GCLOUD_BIGQUERY_ENABLED: false
+
+# Binance 거래소에서 bnb를 deposit하고 수수료 감면을 받는지에 관한 설정
+BINANCE_BNB_FEE_DEDUCT_ENABLED: true
+
+# Balancer가 작동 주기와 몇 번에 한 번씩 잔고를 수정하는지를 나타냄
+BALANCER_TICK_MILLIS: 600000
+BALANCER_TICK_PERIOD: 3
+
+# 각 거래소별 수수료로, % 단위입니다.
+COINONE_TAKER_FEE: 0.06
+CEX_TAKER_FEE: 0.13
+BINANCE_TAKER_FEE: 0.10
+KORBIT_TAKER_FEE: 0.20

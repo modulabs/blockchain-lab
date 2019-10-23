@@ -1,0 +1,27 @@
+total_volume_balancing_rules:
+  - equity: btc
+    volume: 12
+    minimum_transfer_volume: 1
+    exchange: coinone
+    trading_equity_pair: btc/krw
+  - equity: eth
+    volume: 100
+    minimum_transfer_volume: 10
+    exchange: coinone
+    trading_equity_pair: eth/krw
+  - equity: bch
+    volume: 18
+    minimum_transfer_volume: 6
+    exchange: coinone
+    trading_equity_pair: bch/krw
+  - equity: xrp
+    volume: 40000
+    minimum_transfer_volume: 5000
+    exchange: coinone
+    trading_equity_pair: xrp/krw
+minimum_volume_balancing_rules:
+  - equity: bnb
+    target_volume: 50
+    threshold_volume: 40
+    exchange: binance
+    trading_equity_pair: bnb/usdt

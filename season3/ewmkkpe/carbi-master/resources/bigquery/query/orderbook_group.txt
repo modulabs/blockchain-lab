@@ -1,0 +1,9 @@
+#standardSQL
+SELECT
+FORMAT_TIMESTAMP("%F", snapshot_ts, "Asia/Seoul") as date,
+FORMAT_TIMESTAMP("%R", snapshot_ts, "Asia/Seoul") as time,
+COUNT(key) as count
+FROM market.orderbooks
+GROUP BY date, time
+ORDER BY date, time DESC
+LIMIT 256

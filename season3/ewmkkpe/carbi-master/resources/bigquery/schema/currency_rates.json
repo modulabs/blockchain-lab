@@ -1,0 +1,32 @@
+[
+  {
+    "mode": "REQUIRED",
+    "name": "symbol",
+    "type": "STRING"
+  },
+  {
+    "mode": "REQUIRED",
+    "name": "equity_pair",
+    "type": "STRING"
+  },
+  {
+    "mode": "REQUIRED",
+    "name": "rate",
+    "type": "FLOAT"
+  },
+  {
+    "mode": "REQUIRED",
+    "name": "ts",
+    "type": "TIMESTAMP"
+  },
+  {
+    "mode": "REQUIRED",
+    "name": "snapshot_ts",
+    "type": "TIMESTAMP"
+  },
+  {
+    "mode": "REQUIRED",
+    "name": "created",
+    "type": "TIMESTAMP"
+  }
+]
