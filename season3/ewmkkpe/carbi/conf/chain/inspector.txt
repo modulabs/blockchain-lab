@@ -1,0 +1,9 @@
+# coinone/bitfinex transfer
+sell(coinone:btc/krw),sell(currency:krw/usd),buy(bitfinex:btc/usd)
+sell(coinone:bch/krw),sell(currency:krw/usd),buy(bitfinex:bch/usd)
+sell(coinone:eth/krw),sell(currency:krw/usd),buy(bitfinex:eth/usd)
+sell(coinone:xrp/krw),sell(currency:krw/usd),buy(bitfinex:xrp/usd)
+sell(bitfinex:btc/usd),buy(currency:krw/usd),buy(coinone:btc/krw)
+sell(bitfinex:bch/usd),buy(currency:krw/usd),buy(coinone:bch/krw)
+sell(bitfinex:eth/usd),buy(currency:krw/usd),buy(coinone:eth/krw)
+sell(bitfinex:xrp/usd),buy(currency:krw/usd),buy(coinone:xrp/krw)

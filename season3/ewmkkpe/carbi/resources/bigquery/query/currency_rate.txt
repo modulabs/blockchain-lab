@@ -1,0 +1,11 @@
+SELECT
+  symbol,
+  equity_pair,
+  rate,
+  snapshot_ts
+FROM
+  [gazuaapp:market.currency_rates]
+ORDER BY
+  snapshot_ts DESC
+LIMIT
+  1000

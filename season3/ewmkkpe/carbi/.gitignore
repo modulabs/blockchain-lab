@@ -1,0 +1,25 @@
+# conf, temp, logs folder
+conf/*.json
+temp/
+logs/*.log*
+logs/sent
+logs/*.out
+logs/*.err
+output.txt
+
+# data to analyze
+data/*
+
+# virtualenv
+.venv
+.env
+
+# block ide files
+.idea
+*.iml
+
+# python compiled file
+*.pyc
+
+# alembic configuration
+alembic.ini

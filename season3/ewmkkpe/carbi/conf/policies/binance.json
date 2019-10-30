@@ -1,0 +1,4022 @@
+{
+  "dash/eth": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 0.001,
+      "min": 0.001
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-05,
+      "min": 1e-05
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "nuls/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "mtl/btc": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-06,
+      "min": 1e-06
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "rdn/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-07,
+      "min": 1e-07
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "dash/btc": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 0.001,
+      "min": 0.001
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-06,
+      "min": 1e-06
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "chat/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "eos/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-06,
+      "min": 1e-06
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "edo/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-07,
+      "min": 1e-07
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "rpx/bnb": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 10000.0,
+      "step": 1e-05,
+      "min": 1e-05
+    },
+    "notional": {
+      "min": 1.0
+    }
+  },
+  "ins/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-07,
+      "min": 1e-07
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "ltc/eth": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 0.001,
+      "min": 0.001
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-05,
+      "min": 1e-05
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "appc/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "waves/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-06,
+      "min": 1e-06
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "chat/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "ast/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-07,
+      "min": 1e-07
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "zec/eth": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 0.001,
+      "min": 0.001
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-05,
+      "min": 1e-05
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "bch/bnb": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 1e-05,
+      "min": 1e-05
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "notional": {
+      "min": 1.0
+    }
+  },
+  "dlt/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "trig/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-07,
+      "min": 1e-07
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "enj/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "via/bnb": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 10000.0,
+      "step": 1e-05,
+      "min": 1e-05
+    },
+    "notional": {
+      "min": 1.0
+    }
+  },
+  "neo/bnb": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 0.001,
+      "min": 0.001
+    },
+    "price": {
+      "max": 10000000.0,
+      "step": 0.001,
+      "min": 0.001
+    },
+    "notional": {
+      "min": 1.0
+    }
+  },
+  "strat/btc": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-06,
+      "min": 1e-06
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "etc/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-06,
+      "min": 1e-06
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "lrc/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "neo/btc": {
+    "volume": {
+      "max": 100000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-06,
+      "min": 1e-06
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "rcn/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "vibe/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "bcd/eth": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 0.001,
+      "min": 0.001
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-05,
+      "min": 1e-05
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "neo/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-06,
+      "min": 1e-06
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "iota/bnb": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 10000.0,
+      "step": 1e-05,
+      "min": 1e-05
+    },
+    "notional": {
+      "min": 1.0
+    }
+  },
+  "cnd/bnb": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 10000.0,
+      "step": 1e-05,
+      "min": 1e-05
+    },
+    "notional": {
+      "min": 1.0
+    }
+  },
+  "btc/usdt": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 1e-06,
+      "min": 1e-06
+    },
+    "price": {
+      "max": 10000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "notional": {
+      "min": 10.0
+    }
+  },
+  "nano/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-06,
+      "min": 1e-06
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "mod/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-06,
+      "min": 1e-06
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "pivx/bnb": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 10000.0,
+      "step": 1e-05,
+      "min": 1e-05
+    },
+    "notional": {
+      "min": 1.0
+    }
+  },
+  "iota/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "cnd/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "knc/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-07,
+      "min": 1e-07
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "req/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "amb/bnb": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 10000.0,
+      "step": 1e-05,
+      "min": 1e-05
+    },
+    "notional": {
+      "min": 1.0
+    }
+  },
+  "rdn/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "ae/bnb": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 10000.0,
+      "step": 1e-05,
+      "min": 1e-05
+    },
+    "notional": {
+      "min": 1.0
+    }
+  },
+  "gvt/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-07,
+      "min": 1e-07
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "ost/bnb": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 10000.0,
+      "step": 1e-05,
+      "min": 1e-05
+    },
+    "notional": {
+      "min": 1.0
+    }
+  },
+  "mana/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "bnt/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "snt/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "req/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "blz/bnb": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 10000.0,
+      "step": 1e-05,
+      "min": 1e-05
+    },
+    "notional": {
+      "min": 1.0
+    }
+  },
+  "trx/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "arn/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "kmd/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-06,
+      "min": 1e-06
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "gas/btc": {
+    "volume": {
+      "max": 100000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-06,
+      "min": 1e-06
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "iost/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "ltc/bnb": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 1e-05,
+      "min": 1e-05
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "notional": {
+      "min": 1.0
+    }
+  },
+  "fun/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "aion/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-07,
+      "min": 1e-07
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "ven/bnb": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 0.0001,
+      "min": 0.0001
+    },
+    "notional": {
+      "min": 1.0
+    }
+  },
+  "wtc/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-06,
+      "min": 1e-06
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "icx/bnb": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 10000.0,
+      "step": 1e-05,
+      "min": 1e-05
+    },
+    "notional": {
+      "min": 1.0
+    }
+  },
+  "snm/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "fuel/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "bat/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "appc/bnb": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 10000.0,
+      "step": 1e-05,
+      "min": 1e-05
+    },
+    "notional": {
+      "min": 1.0
+    }
+  },
+  "evx/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-07,
+      "min": 1e-07
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "xrp/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "yoyo/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "iota/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "xlm/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "pivx/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-06,
+      "min": 1e-06
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "cdt/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "rdn/bnb": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 10000.0,
+      "step": 1e-05,
+      "min": 1e-05
+    },
+    "notional": {
+      "min": 1.0
+    }
+  },
+  "edo/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-06,
+      "min": 1e-06
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "tnb/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "knc/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "lun/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-07,
+      "min": 1e-07
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "nav/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-06,
+      "min": 1e-06
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "gto/bnb": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 10000.0,
+      "step": 1e-05,
+      "min": 1e-05
+    },
+    "notional": {
+      "min": 1.0
+    }
+  },
+  "ark/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-06,
+      "min": 1e-06
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "sub/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "ins/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-06,
+      "min": 1e-06
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "bnt/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-06,
+      "min": 1e-06
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "mco/btc": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-06,
+      "min": 1e-06
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "dnt/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "via/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-07,
+      "min": 1e-07
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "waves/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-07,
+      "min": 1e-07
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "xzc/bnb": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 0.001,
+      "min": 0.001
+    },
+    "price": {
+      "max": 10000000.0,
+      "step": 0.001,
+      "min": 0.001
+    },
+    "notional": {
+      "min": 1.0
+    }
+  },
+  "gto/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "ada/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "dgd/btc": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 0.001,
+      "min": 0.001
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-06,
+      "min": 1e-06
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "mda/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-07,
+      "min": 1e-07
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "fun/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "icn/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-07,
+      "min": 1e-07
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "eth/usdt": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 1e-05,
+      "min": 1e-05
+    },
+    "price": {
+      "max": 10000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "notional": {
+      "min": 10.0
+    }
+  },
+  "bnb/usdt": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 0.0001,
+      "min": 0.0001
+    },
+    "notional": {
+      "min": 10.0
+    }
+  },
+  "lend/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "steem/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-07,
+      "min": 1e-07
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "wtc/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-07,
+      "min": 1e-07
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "nuls/bnb": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 10000.0,
+      "step": 1e-05,
+      "min": 1e-05
+    },
+    "notional": {
+      "min": 1.0
+    }
+  },
+  "nuls/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "xmr/eth": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 0.001,
+      "min": 0.001
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-05,
+      "min": 1e-05
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "adx/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-07,
+      "min": 1e-07
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "brd/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "elf/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "dlt/bnb": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 10000.0,
+      "step": 1e-05,
+      "min": 1e-05
+    },
+    "notional": {
+      "min": 1.0
+    }
+  },
+  "brd/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-07,
+      "min": 1e-07
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "lun/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-06,
+      "min": 1e-06
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "bcpt/bnb": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 10000.0,
+      "step": 1e-05,
+      "min": 1e-05
+    },
+    "notional": {
+      "min": 1.0
+    }
+  },
+  "elf/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "bts/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "rcn/bnb": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 10000.0,
+      "step": 1e-05,
+      "min": 1e-05
+    },
+    "notional": {
+      "min": 1.0
+    }
+  },
+  "rpx/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "rpx/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "powr/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "etc/btc": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-06,
+      "min": 1e-06
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "lend/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "mtl/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-06,
+      "min": 1e-06
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "vibe/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-07,
+      "min": 1e-07
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "bts/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "link/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "nebl/bnb": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 10000.0,
+      "step": 1e-05,
+      "min": 1e-05
+    },
+    "notional": {
+      "min": 1.0
+    }
+  },
+  "ark/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-07,
+      "min": 1e-07
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "eos/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "mth/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "eng/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "mco/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-06,
+      "min": 1e-06
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "eng/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-07,
+      "min": 1e-07
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "ae/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-07,
+      "min": 1e-07
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "xlm/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "mth/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "amb/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "qtum/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-06,
+      "min": 1e-06
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "salt/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-06,
+      "min": 1e-06
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "bat/bnb": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 10000.0,
+      "step": 1e-05,
+      "min": 1e-05
+    },
+    "notional": {
+      "min": 1.0
+    }
+  },
+  "enj/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "cmt/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "ltc/usdt": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 1e-05,
+      "min": 1e-05
+    },
+    "price": {
+      "max": 10000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "notional": {
+      "min": 10.0
+    }
+  },
+  "oax/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-07,
+      "min": 1e-07
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "zec/btc": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 0.001,
+      "min": 0.001
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-06,
+      "min": 1e-06
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "bch/usdt": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 1e-05,
+      "min": 1e-05
+    },
+    "price": {
+      "max": 10000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "notional": {
+      "min": 10.0
+    }
+  },
+  "ast/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "wtc/bnb": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 0.0001,
+      "min": 0.0001
+    },
+    "notional": {
+      "min": 1.0
+    }
+  },
+  "icx/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-07,
+      "min": 1e-07
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "cnd/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "bnb/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-07,
+      "min": 1e-07
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "blz/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "poe/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "zrx/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "dlt/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "link/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "steem/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-06,
+      "min": 1e-06
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "ae/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-06,
+      "min": 1e-06
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "zrx/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "lsk/bnb": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 0.0001,
+      "min": 0.0001
+    },
+    "notional": {
+      "min": 1.0
+    }
+  },
+  "wings/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "bqx/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "vib/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "bcpt/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "ctr/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-07,
+      "min": 1e-07
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "qsp/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "xrp/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "ppt/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-07,
+      "min": 1e-07
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "adx/bnb": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 10000.0,
+      "step": 1e-05,
+      "min": 1e-05
+    },
+    "notional": {
+      "min": 1.0
+    }
+  },
+  "rcn/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "wabi/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "xzc/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-06,
+      "min": 1e-06
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "nano/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-07,
+      "min": 1e-07
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "ctr/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "yoyo/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "arn/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "qsp/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "salt/btc": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-06,
+      "min": 1e-06
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "snt/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "123/456": {
+    "volume": {
+      "max": 100000.0,
+      "step": 0.001,
+      "min": 0.001
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-06,
+      "min": 1e-06
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "xlm/bnb": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 10000.0,
+      "step": 1e-05,
+      "min": 1e-05
+    },
+    "notional": {
+      "min": 1.0
+    }
+  },
+  "xmr/btc": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 0.001,
+      "min": 0.001
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-06,
+      "min": 1e-06
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "nano/bnb": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 0.0001,
+      "min": 0.0001
+    },
+    "notional": {
+      "min": 1.0
+    }
+  },
+  "xzc/btc": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-06,
+      "min": 1e-06
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "sngls/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "rlc/bnb": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 10000.0,
+      "step": 1e-05,
+      "min": 1e-05
+    },
+    "notional": {
+      "min": 1.0
+    }
+  },
+  "neo/usdt": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 0.001,
+      "min": 0.001
+    },
+    "price": {
+      "max": 10000000.0,
+      "step": 0.001,
+      "min": 0.001
+    },
+    "notional": {
+      "min": 10.0
+    }
+  },
+  "tnb/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "lsk/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-07,
+      "min": 1e-07
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "bch/eth": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 0.001,
+      "min": 0.001
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-05,
+      "min": 1e-05
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "snm/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "bch/btc": {
+    "volume": {
+      "max": 100000.0,
+      "step": 0.001,
+      "min": 0.001
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-06,
+      "min": 1e-06
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "bqx/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-07,
+      "min": 1e-07
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "poe/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "evx/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "tnt/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "bnb/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-06,
+      "min": 1e-06
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "trig/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-06,
+      "min": 1e-06
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "pivx/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-07,
+      "min": 1e-07
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "mod/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-07,
+      "min": 1e-07
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "tnt/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "bcpt/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "adx/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "gxs/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-07,
+      "min": 1e-07
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "mana/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "gxs/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-06,
+      "min": 1e-06
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "wabi/bnb": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 10000.0,
+      "step": 1e-05,
+      "min": 1e-05
+    },
+    "notional": {
+      "min": 1.0
+    }
+  },
+  "wabi/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "ppt/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-06,
+      "min": 1e-06
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "bcd/btc": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 0.001,
+      "min": 0.001
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-06,
+      "min": 1e-06
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "nebl/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-07,
+      "min": 1e-07
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "fuel/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "cmt/bnb": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 10000.0,
+      "step": 1e-05,
+      "min": 1e-05
+    },
+    "notional": {
+      "min": 1.0
+    }
+  },
+  "btg/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-06,
+      "min": 1e-06
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "qsp/bnb": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 10000.0,
+      "step": 1e-05,
+      "min": 1e-05
+    },
+    "notional": {
+      "min": 1.0
+    }
+  },
+  "bts/bnb": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 10000.0,
+      "step": 1e-05,
+      "min": 1e-05
+    },
+    "notional": {
+      "min": 1.0
+    }
+  },
+  "dgd/eth": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 0.001,
+      "min": 0.001
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-05,
+      "min": 1e-05
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "nebl/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-06,
+      "min": 1e-06
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "storj/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-07,
+      "min": 1e-07
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "nav/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-07,
+      "min": 1e-07
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "gvt/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-06,
+      "min": 1e-06
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "btg/btc": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-06,
+      "min": 1e-06
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "ost/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "sngls/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "rlc/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-07,
+      "min": 1e-07
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "ada/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "cdt/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "kmd/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-07,
+      "min": 1e-07
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "ven/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "iost/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "amb/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "trx/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "nav/bnb": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 10000.0,
+      "step": 1e-05,
+      "min": 1e-05
+    },
+    "notional": {
+      "min": 1.0
+    }
+  },
+  "aion/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-06,
+      "min": 1e-06
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "xvg/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "powr/bnb": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 10000.0,
+      "step": 1e-05,
+      "min": 1e-05
+    },
+    "notional": {
+      "min": 1.0
+    }
+  },
+  "storj/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "via/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-06,
+      "min": 1e-06
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "qtum/btc": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-06,
+      "min": 1e-06
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "mda/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "sub/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "appc/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-07,
+      "min": 1e-07
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "omg/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-06,
+      "min": 1e-06
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "omg/btc": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-06,
+      "min": 1e-06
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "bat/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "cmt/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "hsr/btc": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-06,
+      "min": 1e-06
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "aion/bnb": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 10000.0,
+      "step": 1e-05,
+      "min": 1e-05
+    },
+    "notional": {
+      "min": 1.0
+    }
+  },
+  "icx/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-06,
+      "min": 1e-06
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "eth/btc": {
+    "volume": {
+      "max": 100000.0,
+      "step": 0.001,
+      "min": 0.001
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-06,
+      "min": 1e-06
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "icn/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "oax/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "brd/bnb": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 10000.0,
+      "step": 1e-05,
+      "min": 1e-05
+    },
+    "notional": {
+      "min": 1.0
+    }
+  },
+  "steem/bnb": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 10000.0,
+      "step": 1e-05,
+      "min": 1e-05
+    },
+    "notional": {
+      "min": 1.0
+    }
+  },
+  "rlc/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-06,
+      "min": 1e-06
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "trig/bnb": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 10000.0,
+      "step": 1e-05,
+      "min": 1e-05
+    },
+    "notional": {
+      "min": 1.0
+    }
+  },
+  "vib/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "lrc/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "gto/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "hsr/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-06,
+      "min": 1e-06
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "wings/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-07,
+      "min": 1e-07
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "blz/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "lsk/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-06,
+      "min": 1e-06
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "ost/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "yoyo/bnb": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 10000.0,
+      "step": 1e-05,
+      "min": 1e-05
+    },
+    "notional": {
+      "min": 1.0
+    }
+  },
+  "ven/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "dnt/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "xvg/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "ltc/btc": {
+    "volume": {
+      "max": 100000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-06,
+      "min": 1e-06
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "waves/bnb": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 0.0001,
+      "min": 0.0001
+    },
+    "notional": {
+      "min": 1.0
+    }
+  },
+  "strat/eth": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-06,
+      "min": 1e-06
+    },
+    "notional": {
+      "min": 0.01
+    }
+  },
+  "powr/btc": {
+    "volume": {
+      "max": 90000000.0,
+      "step": 1.0,
+      "min": 1.0
+    },
+    "price": {
+      "max": 100000.0,
+      "step": 1e-08,
+      "min": 1e-08
+    },
+    "notional": {
+      "min": 0.001
+    }
+  },
+  "mco/bnb": {
+    "volume": {
+      "max": 10000000.0,
+      "step": 0.01,
+      "min": 0.01
+    },
+    "price": {
+      "max": 10000.0,
+      "step": 1e-05,
+      "min": 1e-05
+    },
+    "notional": {
+      "min": 1.0
+    }
+  }
+}

@@ -1,0 +1,17 @@
+SELECT
+  key,
+  exchange,
+  equity_pair,
+  ask0_price,
+  ask0_volume,
+  bid0_price,
+  bid0_volume,
+  snapshot_ts,
+  ts,
+  created
+FROM
+  market.orderbooks
+ORDER BY
+  snapshot_ts DESC
+LIMIT
+  1000

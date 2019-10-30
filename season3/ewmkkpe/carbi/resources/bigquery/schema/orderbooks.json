@@ -1,0 +1,91 @@
+[
+  {
+    "mode": "REQUIRED",
+    "name": "key",
+    "type": "STRING"
+  },
+  {
+    "mode": "REQUIRED",
+    "name": "exchange",
+    "type": "STRING"
+  },
+  {
+    "mode": "REQUIRED",
+    "name": "equity_pair",
+    "type": "STRING"
+  },
+  {
+    "mode": "REQUIRED",
+    "name": "ask0_price",
+    "type": "FLOAT"
+  },
+  {
+    "mode": "REQUIRED",
+    "name": "ask0_volume",
+    "type": "FLOAT"
+  },
+  {
+    "fields": [
+      {
+        "mode": "REQUIRED",
+        "name": "price",
+        "type": "FLOAT"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "volume",
+        "type": "FLOAT"
+      }
+    ],
+    "mode": "REPEATED",
+    "name": "asks",
+    "type": "RECORD"
+  },
+  {
+    "mode": "REQUIRED",
+    "name": "bid0_price",
+    "type": "FLOAT"
+  },
+  {
+    "mode": "REQUIRED",
+    "name": "bid0_volume",
+    "type": "FLOAT"
+  },
+  {
+    "fields": [
+      {
+        "mode": "REQUIRED",
+        "name": "price",
+        "type": "FLOAT"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "volume",
+        "type": "FLOAT"
+      }
+    ],
+    "mode": "REPEATED",
+    "name": "bids",
+    "type": "RECORD"
+  },
+  {
+    "mode": "REQUIRED",
+    "name": "struct",
+    "type": "STRING"
+  },
+  {
+    "mode": "REQUIRED",
+    "name": "ts",
+    "type": "TIMESTAMP"
+  },
+  {
+    "mode": "REQUIRED",
+    "name": "snapshot_ts",
+    "type": "TIMESTAMP"
+  },
+  {
+    "mode": "REQUIRED",
+    "name": "created",
+    "type": "TIMESTAMP"
+  }
+]
