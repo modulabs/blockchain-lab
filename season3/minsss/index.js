@@ -22,14 +22,15 @@ const tradingOption = {
 };
 
 function requestWithOption(option) {
-  request(option, (err, response, b) => {
+  request(option, (err, response, data) => {
     if (err) {
       console.log('err:', err);
       return;
     }
-    console.log(b);
+    let filtered = data.filter((elem) => elem.name.slice(4, 7) === 'KRW');
+    console.log(filtered);
   });
 }
 
-requestWithOption(assetsOption);
+// requestWithOption(assetsOption);
 requestWithOption(tradingOption);
