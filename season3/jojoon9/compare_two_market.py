@@ -52,7 +52,7 @@ def markets(url):
 
 gopax_url = "https://api.gopax.co.kr/trading-pairs"
 upbit_url = "https://api.upbit.com/v1/market/all"
-
+"""
 gopax_markets_list = markets(gopax_url)
 upbit_markets_list = markets(upbit_url)
 
@@ -75,3 +75,27 @@ print("KRW market list : {}".format(KRWs))
 print(len(KRWs))
 print("BTC market list : {}".format(BTCs))
 print(len(BTCs))
+"""
+
+def intersections(gopax_url, upbit_url):
+    gopax_markets_list = markets(gopax_url)
+    upbit_markets_list = markets(upbit_url)
+
+    intersection = list(set(gopax_markets_list) & set(upbit_markets_list))
+
+    KRWs = []
+    BTCs = []
+
+    for i in intersection:
+        if i[:3] == "KRW":
+            KRWs.append(i)
+        elif i[:3] == "BTC":
+            BTCs.append(i)
+        else:
+            assert("Failed")
+
+    return KRWs, BTCs
+
+KRWs, _ = intersections(gopax_url, upbit_url)
+
+print(KRWs)
