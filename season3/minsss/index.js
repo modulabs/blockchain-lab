@@ -1,6 +1,4 @@
-const request = require('request');
-
-const method = 'GET';
+const rp = require('request-promise');
 
 const ASSETS = '/assets';
 const TRADING_PAIRS = '/trading-pairs';
@@ -8,29 +6,28 @@ const TRADING_PAIRS = '/trading-pairs';
 const host = 'api.gopax.co.kr';
 
 const assetsOption = {
-  method,
+  method: 'GET',
   json: true,
   url: `https://${host}${ASSETS}`,
-  strictSSL: false,
 };
 
 const tradingOption = {
-  method,
+  method: 'GET',
   json: true,
-  url: `https://${host}${TRADING_PAIRS}`,
-  strictSSL: false,
+  uri: `https://${host}${TRADING_PAIRS}`,
 };
 
 function requestWithOption(option) {
-  request(option, (err, response, data) => {
-    if (err) {
-      console.log('err:', err);
-      return;
-    }
-    let filtered = data.filter((elem) => elem.name.slice(4, 7) === 'KRW');
-    console.log(filtered);
+  return rp(option).then((response) => {
+    let filtered = response.filter((elem) => elem.name.slice(4, 7) === 'KRW');
+    return filtered;
+  }).catch((err) => {
+    console.log(err);
+    return;
   });
 }
 
 // requestWithOption(assetsOption);
-requestWithOption(tradingOption);
+requestWithOption(tradingOption).then((pairs) => {
+  console.log(pairs, pairs.length);
+});
