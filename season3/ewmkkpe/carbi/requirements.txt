@@ -19,7 +19,7 @@ google-cloud-core==0.28.0
 google-resumable-media==0.3.1
 googleapis-common-protos==1.5.3
 greenlet==0.4.12
-httplib2==0.10.3
+httplib2==0.18.0
 idna==2.5
 itsdangerous==0.24
 Jinja2==2.10
