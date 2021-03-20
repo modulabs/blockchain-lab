@@ -22,7 +22,7 @@ greenlet==0.4.12
 httplib2==0.10.3
 idna==2.5
 itsdangerous==0.24
-Jinja2==2.10
+Jinja2==2.11.3
 jmespath==0.9.3
 Mako==1.0.7
 MarkupSafe==1.0
